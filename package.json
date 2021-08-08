@@ -1,5 +1,5 @@
 { "name": "require-mjs-autoprefer-default-export-pmb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Automatically prefer the `default` export of a `require()`d .mjs file",
   "keywords": [],
 

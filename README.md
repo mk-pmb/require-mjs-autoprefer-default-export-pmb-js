@@ -18,7 +18,7 @@ This module exports one function:
 ### autoPreferDefaultExport(imported)
 
 If `imported` is an object with only one property, named `default`,
-returns `imported.default`, else return `imported`.
+returns `imported.default`, else returns `imported`.
 
 
 
