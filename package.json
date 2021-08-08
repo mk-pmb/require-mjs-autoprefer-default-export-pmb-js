@@ -1,0 +1,29 @@
+{ "name": "require-mjs-autoprefer-default-export-pmb",
+  "version": "0.1.0",
+  "description": "Automatically prefer the `default` export of a `require()`d .mjs file",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/require-mjs-autoprefer-default-export-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/require-mjs-autoprefer-default-export-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/require-mjs-autoprefer-default-export-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "apd.js",
+  "scripts": { "test": "nodemjs test/all.mjs" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
