@@ -1,5 +1,5 @@
 { "name": "require-mjs-autoprefer-default-export-pmb",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Automatically prefer the `default` export of a `require()`d .mjs file",
   "keywords": [],
 
@@ -17,13 +17,18 @@
   "private": false, "license": "ISC",
 
   "main": "apd.js",
-  "scripts": { "test": "nodemjs test/all.mjs" },
+  "scripts": { "test": "echo E: 'No tests yet!'; exit 2" },
   "directories": { "test": "test" },
+  "eslintConfig": { "extends": "nodejs-pmb" },
 
   "dependencies": {},
   "devDependencies": {
+    "eslint-config-nodejs-pmb": "^0.3.10",
+    "eslint-plugin-json-light-pmb": "^1.0.7",
+    "eslint-plugin-n": "^17.16.2",
+    "nodemjs": "^0.1.16"
   },
 
 
-  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
 }

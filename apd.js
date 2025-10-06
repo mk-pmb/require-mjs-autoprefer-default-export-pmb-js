@@ -2,10 +2,12 @@
 /* -*- tab-width: 2 -*- */
 'use strict';
 
-module.exports = function autoPreferDefaultExport(imported) {
-  if ((imported && typeof imported) !== 'object') { return imported; }
-  const names = Object.keys(imported);
-  if (names.length !== 1) { return imported; }
-  if (names[0] === 'default') { return imported.default; }
-  return imported;
+module.exports = function autoPreferDefaultExport(im, altn) {
+  if ((im && typeof im) !== 'object') { return im; }
+  const df = im.default;
+  if (df === undefined) { return im; }
+  if ((altn && im[altn] && typeof altn) === 'string') { return im[altn]; }
+  const other = Object.keys(im).filter(k => (k !== 'default'));
+  if (!other.length) { return df; }
+  return im;
 };
